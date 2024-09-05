@@ -17,7 +17,7 @@ const demoData = [
 
 const Demos = () => {
     return (
-        <div className='mt-[-475px] xl:mt-[-390px] lg:mt-[-320px] md:mt-[-280px] sm:mt-[0px] pb-[80px] lg:pb-[60px] md:pb-[50px] relative z-10'>
+        <div className='mt-[-490px] xl:mt-[-400px] lg:mt-[-320px] md:mt-[-280px] sm:mt-[0px] pb-[80px] lg:pb-[60px] md:pb-[50px] relative z-10' id="demos">
             <ContainerWrapper>
                 <h2 className='text-[36px] lg:text-[32px] sm:text-[26px] text-center text-white leading-[111.111%] font-[400] bebas-neue mb-[60px] lg:mb-[40px] md:mb-[30px] animate__animated animate__fadeInUp'>
                     Explore Our 10+ Awesome Demos
