@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  --background: #ffffff;
+  --background: #0D1014;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0D1014;
     --foreground: #ededed;
   }
 }
@@ -17,7 +19,14 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Outfit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 180%;
 }
 
 @layer utilities {
@@ -25,3 +34,81 @@ body {
     text-wrap: balance;
   }
 }
+
+.bebas-neue {
+  font-family: "Bebas Neue";
+}
+.outfit{
+  font-family: Outfit;
+}
+
+
+/*-- custom style --*/
+.btn-has-shape {
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.btn-has-shape::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  top: 100%;
+  transition: 0.4s;
+  z-index: 0;
+}
+
+.btn-has-shape:hover::after {
+  top: 0%;
+}
+
+.hov-btn .btn-hov-text {
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 30px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.hov-btn .btn-hov-text .btn-text {
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.hov-btn:hover .btn-hov-text .btn-text {
+  transform: translateY(-28px);
+}
+
+
+
+/*-- demo card style --*/
+.demo-card .demo-card-btn{
+  transition: 0.4s;
+}
+.demo-card .demo-card-btn h4 span{
+  transition: 0.4s;
+}
+.demo-card:hover .demo-card-btn-icon{
+  transition: 0.5s;
+}
+
+.demo-card:hover .demo-card-btn{
+  background: linear-gradient(90deg, #1DFF96 0%, #BCFF7B 100%) !important;
+  color: #111;
+  font-weight: 500;
+}
+.demo-card:hover .demo-card-btn-icon{
+  filter: brightness(0);
+}
+.demo-card:hover h4 span{
+  color: #FFFFFF;
+}
+

@@ -1,8 +1,17 @@
 import React from 'react'
+import Header from '../../Core/Header/Header'
+import Banner from './Banner'
+import Demos from './Demos/Demos'
+import Footer from '../../Core/Footer/Footer'
 
 const HomePage = () => {
   return (
-    <div className="text-yellow-950">HomePage</div>
+    <>
+      <Header/>
+      <Banner/>
+      <Demos/>
+      <Footer/>
+    </>
   )
 }
 
