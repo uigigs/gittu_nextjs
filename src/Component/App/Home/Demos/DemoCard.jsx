@@ -9,7 +9,7 @@ const DemoCard = ({ image, title, link }) => {
             </div>
             <div className="flex items-center justify-between pt-[17px]">
                 <h4 className='md-text-[15px]'><span className='text-[rgba(255,255,255,0.50)]'>#</span> <strong className='font-[600]'>{title}</strong></h4>
-                <Link href={link} className='py-[7px] w-[108px] text-[16px] md:text-[15px] font-[400] leading-[162.5%] rounded-[20px] flex items-center justify-center gap-[22px] demo-card-btn bg-[rgba(255,255,255,0.15)]'>
+                <Link href={link} target='_blank' className='py-[7px] w-[108px] text-[16px] md:text-[15px] font-[400] leading-[162.5%] rounded-[20px] flex items-center justify-center gap-[22px] demo-card-btn bg-[rgba(255,255,255,0.15)]'>
                     View
                     <img src="./assets/images/icons/arrow.svg" alt="icon" className='demo-card-btn-icon' />
                 </Link>
