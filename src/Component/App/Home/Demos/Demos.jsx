@@ -22,7 +22,7 @@ const Demos = () => {
                 <h2 className='text-[36px] lg:text-[32px] sm:text-[26px] text-center text-white leading-[111.111%] font-[400] bebas-neue mb-[60px] lg:mb-[40px] md:mb-[30px] animate__animated animate__fadeInUp'>
                     Explore Our 10+ Awesome Demos
                 </h2>
-                <div className="flex items-start justify-start mx-[-20px] lg:mx-[12px] flex-wrap">
+                <div className="flex items-start justify-start mx-[-20px] lg:mx-[-12px] flex-wrap">
                     {demoData.map((demo, index) => (
                         <div className="px-[20px] lg:px-[12px] mb-[40px] md:mb-[24px] w-1/2 md:w-full animate__animated animate__fadeInUp" key={index}>
                             <DemoCard image={demo.image} title={demo.title} link={demo.link} />
