@@ -1,4 +1,5 @@
 import React from 'react'
+import 'animate.css';
 import Header from '../../Core/Header/Header'
 import Banner from './Banner'
 import Demos from './Demos/Demos'
